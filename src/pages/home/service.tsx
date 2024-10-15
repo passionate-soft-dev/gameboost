@@ -3,14 +3,10 @@ import { useState } from "react";
 const Service = () => {
   return (
     <div className="relative mt-10 lg:mt-20">
-      <video
+      <img
+        src={`/images/game_player/1.png`}
         className="w-full h-[200px] lg:h-[300px] object-cover object-center opacity-50"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="/images/game_player/1.webm" />
-      </video>
+      />
       <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-center items-center gap-2 lg:gap-4">
         <h1 className="mx-auto text-3xl max-w-[75%] lg:text-5xl lg:max-w-[75%] text-center">
           So…what are you waiting for? Launch yourself to your dream rank today!
