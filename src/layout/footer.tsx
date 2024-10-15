@@ -84,7 +84,8 @@ const Footer = () => {
         className={`${classNames.containerClass} flex max-lg:flex-col items-center justify-between max-lg:justify-center border-t pt-6 border-violet-800`}
       >
         <span className="text-gray-400">
-          Copyright ©{new Date().getFullYear()} LOL BOOSTS. All rights Reserved
+          Copyright ©{new Date().getFullYear()} PASSIONATE DEV. All rights
+          Reserved
         </span>
         <div className="flex justify-start items-center gap-1 lg:gap-3">
           {socials.map((d: any, index: number) => (
