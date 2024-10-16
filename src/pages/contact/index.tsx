@@ -10,8 +10,8 @@ const Contact = () => {
         </div>
         <div>
           <h2 className="text-3xl font-bold">
-            Premium 24/7 support in multiple languages. By Game BoostERS for LOL
-            BOOSTERS
+            Premium 24/7 support in multiple languages. By Game Boosters for
+            Game Boost
           </h2>
           <p className="mt-6 text-gray-300">
             Our Game BoostS support team is available 24/7 to help you with any
