@@ -23,7 +23,7 @@ const Boosters = () => {
         Meet our hand-selected, expert boosters!
       </h1>
       <p className="mt-6 text-center text-lg text-gray-300">
-        Have lol-boosts drag you out of the elo hell!
+        Have Game-Boosts drag you out of the elo hell!
       </p>
       <div className="mt-10 lg:mt-20">
         <Swiper

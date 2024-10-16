@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
       <div className="mt-5 lg:mt-6 space-y-5">
         <p>
           LBS SERVICES GLOBAL LTD, a private limited company, founded in Latvia,
-          ("us", "we", or "our") operates the https://lol-boosts.com/ website
+          ("us", "we", or "our") operates the https://Game-Boosts.com/ website
           (the "Service").
         </p>
         <p>
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
         </p>
         <p>
           We have nominated a Data Protection Officer, and you can contact him
-          at lol-boosts.com or via our postal address. Please mark the envelope
+          at Game-Boosts.com or via our postal address. Please mark the envelope
           ‘Data Protection Officer’. Our postal address is 2, Frederick Street,
           Kings Cross, London, WC1X 0ND,UNITED KINGDOM
         </p>
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
           information in accordance with this policy. Unless otherwise defined
           in this Privacy Policy, terms used in this Privacy Policy have the
           same meanings as in our Terms and Conditions, accessible at
-          https://lol-boosts.com.
+          https://Game-Boosts.com.
         </p>
         <p>
           Information Collection And Use While using our Service, we may ask you
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
           Disputes relating to the processing of personal data are resolved
           through customer support in the first instance. You have the right to
           contact LBS SERVICES GLOBAL LTD Data Protection Officer
-          (info@lol-boosts.com).
+          (info@Game-Boosts.com).
         </p>
         <p>
           If you have any questions about this Privacy Policy, please contact us

@@ -159,7 +159,7 @@ const Description = () => {
         <div className="space-y-4">
           <strong className="text-lg text-white">Improved Matchmaking</strong>
           <div className="space-y-4">
-            Reaching a higher rank through LoL Boosting exposes you to matches
+            Reaching a higher rank through Game Boosting exposes you to matches
             with more skilled players. This elevated competitive environment not
             only offers greater challenges but also speeds up your growth as a
             player, pushing you to sharpen your skills in a more demanding

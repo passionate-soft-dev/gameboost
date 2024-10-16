@@ -12,11 +12,11 @@ const Hiring = () => {
       <div className="space-y-8">
         <h1 className="max-w-[75%] text-center mx-auto text-3xl lg:text-5xl font-bold">
           Start making money on{" "}
-          <span className="text-violet-500">LOL-BOOSTS</span>
+          <span className="text-violet-500">Game-Boosts</span>
         </h1>
         <div className="max-w-[65%] text-center mx-auto ">
           Join us as a seller or a booster today and start offering your
-          services and products to our huge LOL BOOSTs community. ⚡
+          services and products to our huge Game Boosts community. ⚡
         </div>
         <button
           className={`flex mx-auto ${classNames.btnClass} flex items-center gap-2 justify-center`}

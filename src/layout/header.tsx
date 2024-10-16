@@ -60,10 +60,12 @@ const Header = () => {
     },
     { title: "", link: "", element: <FaInstagram /> },
   ];
+  const [openMenu, setOpenMenu] = useState(false);
+
   const handleClose = () => {
-    if (toggleRef.current) {
-      toggleRef.current.click();
-    }
+    setTimeout(() => {
+      setOpenMenu(false);
+    }, 200);
   };
   return (
     <>
@@ -72,42 +74,7 @@ const Header = () => {
           scrolled ? "fixed" : "relative"
         } top-0 z-1 z-50 transition-all duration-100 bg-[#0f1a31] shadow-xl bg-opacity-75`}
       >
-        <div className="w-full bg-[#0c1322]">
-          {/* <div className={`${classNames.containerClass} py-1`}>
-            <div className="flex justify-between items-center">
-              <div>
-                <span className="hidden lg:block">
-                  Expert <span className={`${classNames.textMClass}`}>LOL</span>{" "}
-                  Coaching now available on LoL boost.
-                </span>
-              </div>
-              <div className="flex justify-between w-full lg:w-auto lg:justify-end items-center gap-5">
-                <div className="flex justify-start items-center gap-1 lg:gap-3">
-                  {socials.map((d: any, index: number) => (
-                    <a
-                      key={index}
-                      href={d.link}
-                      className="px-2 py-1 rounded-lg hover:bg-violet-500 hover:bg-opacity-50"
-                    >
-                      {d.element}
-                    </a>
-                  ))}
-                </div>
-                <div className="flex items-center gap-1 lg:gap-2 text-sm">
-                  <Link to={`/login`} className={`${classNames.hoverClass}`}>
-                    <span className="hidden lg:block">Login</span>
-                    <FaSignInAlt className="block lg:hidden w-6" />
-                  </Link>
-                  |
-                  <Link to={`/register`} className={`${classNames.hoverClass}`}>
-                    <span className="hidden lg:block">Register</span>
-                    <FaUserPlus className="block lg:hidden w-6" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </div>
+        <div className="w-full bg-[#0c1322]"></div>
         <div className={`${classNames.containerClass} py-3`}>
           <div className="flex flex-col lg:flex-row lg:justify-between items-center">
             <div className="flex w-full lg:w-auto items-center gap-4 justify-between lg:justify-start relative flex-shrink-0">
@@ -115,12 +82,11 @@ const Header = () => {
                 <Link to="/" ref={toggleRef} className="text-xl font-bold">
                   <span className="text-3xl text-violet-500">G</span>ameBoost
                 </Link>
-                <div className="relative">
+                <div className="relative" tabIndex={1} onBlur={handleClose}>
                   <button
-                    id="dropdownCheckboxButton"
-                    data-dropdown-toggle="dpSelectGame"
-                    className={`px-4 py-2 rounded-3xl border border-violet-600 hover:bg-violet-600 inline-flex items-center`}
+                    className={`px-4 py-2 rounded-3xl border border-indigo-600 hover:bg-indigo-600 inline-flex items-center`}
                     type="button"
+                    onClick={() => setOpenMenu(!openMenu)}
                   >
                     Select Game{" "}
                     <svg
@@ -139,30 +105,29 @@ const Header = () => {
                       />
                     </svg>
                   </button>
-                  <div
-                    id="dpSelectGame"
-                    className="z-10 hidden bg-violet-950 bg-opacity-75 rounded-xl p-2 w-56"
-                  >
-                    {games.map((d: any, index: number) => (
-                      <NavLink
-                        to={d.url}
-                        key={index}
-                        className={({ isActive }) =>
-                          `flex items-center gap-2 py-2 px-3 rounded-xl hover:bg-violet-500 bg-opacity-70 ${
-                            isActive ? "bg-violet-500" : ""
-                          }`
-                        }
-                        onClick={handleClose}
-                      >
-                        <img
-                          src={d.icon}
-                          alt={d.title}
-                          className="w-6 flex-shrink-0"
-                        />{" "}
-                        {d.title}
-                      </NavLink>
-                    ))}
-                  </div>
+                  {openMenu && (
+                    <div className="z-10 absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-indigo-950 bg-opacity-75 rounded-xl p-2 w-56">
+                      {games.map((d: any, index: number) => (
+                        <NavLink
+                          to={d.url}
+                          key={index}
+                          className={({ isActive }) =>
+                            `flex items-center gap-2 py-2 px-3 rounded-xl hover:bg-indigo-500 bg-opacity-70 ${
+                              isActive ? "bg-indigo-500" : ""
+                            }`
+                          }
+                          onClick={handleClose}
+                        >
+                          <img
+                            src={d.icon}
+                            alt={d.title}
+                            className="w-6 flex-shrink-0"
+                          />{" "}
+                          {d.title}
+                        </NavLink>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <Link
                   to="/boosters"

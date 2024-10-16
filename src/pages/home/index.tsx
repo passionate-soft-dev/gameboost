@@ -34,7 +34,7 @@ const Home = () => {
       <BoostNumbers />
       {/* BOOSTERS */}
       <Boosters />
-      {/* ABOUT LOL BOOSTERS */}
+      {/* ABOUT Game BoostERS */}
       <AboutBoosts />
     </>
   );

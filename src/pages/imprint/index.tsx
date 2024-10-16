@@ -35,7 +35,7 @@ const Imprint = () => {
               <label htmlFor="" className="text-xl">
                 Contact
               </label>
-              <p className="text-gray-400">Email: info@lol-boosts.com</p>
+              <p className="text-gray-400">Email: info@Game-Boosts.com</p>
               <p className="text-gray-400">Phone: +49 1759991573</p>
             </div>
             <div className="flex flex-col gap-2">

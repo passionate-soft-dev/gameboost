@@ -28,7 +28,7 @@ const BoostNumbers = () => {
       number: 100,
       title: "Partners",
       description:
-        "Our team at lol-boosts is the most sophisticated in the industry! ",
+        "Our team at Game-Boosts is the most sophisticated in the industry! ",
     },
   ];
   return (
@@ -37,7 +37,7 @@ const BoostNumbers = () => {
         className={` flex flex-col  lg:flex-row justify-between items-center lg:items-end gap-4`}
       >
         <h1 className="text-3xl lg:text-4xl font-bold max-lg:text-center">
-          LOL-BOOSTS in <br /> Numbers!
+          Game-Boosts in <br /> Numbers!
         </h1>
         <div className="max-lg:text-center text-gray-400">
           These numbers truly reflect companies success!

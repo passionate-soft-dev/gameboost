@@ -6,7 +6,7 @@ const AboutBoosts = () => {
       <div className={`${classNames.containerClass}`}>
         <div>
           <h1 className="text-center text-3xl lg:text-5xl font-bold">
-            About LOL-BOOSTS!
+            About Game-Boosts!
           </h1>
           <p className="mt-4 text-center text-lg text-gray-300">
             What makes us the preferred choice for thousands of players?
@@ -18,7 +18,7 @@ const AboutBoosts = () => {
             <div className="mt-6 text-gray-400">
               Your safety is crucial. That's why we provide premium account
               encryption and top-notch automated VPN security throughout the
-              entire experience. Lol-boosts has never experienced any bans, and
+              entire experience. Game-Boosts has never experienced any bans, and
               we've helped thousands of gamers achieve their League of Legends,
               Valorant or TFT rank dreams without any problems whatsoever!
             </div>
@@ -39,7 +39,7 @@ const AboutBoosts = () => {
               Our mechanism provides the quickest, safest, and easiest route to
               your goals. Stop wasting time in low elo... we're here to offer
               not just the best experience but also the most effective one in
-              the field. At lol-boosts, we strive to grant the best rank-up
+              the field. At Game-Boosts, we strive to grant the best rank-up
               experience possible!
             </div>
           </div>
